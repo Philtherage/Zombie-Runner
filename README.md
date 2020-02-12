@@ -9,3 +9,9 @@
 * Section 6: 171. Getting Stuck & Jittering.
 
 * Section 6: 172. Enemy AI - Chase Range.
+
+* Section 6: 175. Give That Player A Gun.
+
+* Section 6: 176. Introduction To Raycasting.
+
+* Section 6: 177. Enemy Health & Damage.
