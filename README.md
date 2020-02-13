@@ -17,3 +17,5 @@
 * Section 6: 177. Enemy Health & Damage.
 
 * Section 6: 178. Implement A Muzzle Flash.
+
+* Section 6: 179. Creating Shooting Hit Effect.

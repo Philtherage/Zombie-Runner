@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] ParticleSystem muzzleFlash;
+    [SerializeField] ParticleSystem hitEffect;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 10f;
 
@@ -36,6 +37,8 @@ public class Weapon : MonoBehaviour
 
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
         {
+            SpawnHitEffect(hit);
+
             EnemyHealth target = hit.collider.gameObject.GetComponent<EnemyHealth>();
             if (target)
             {
@@ -49,4 +52,12 @@ public class Weapon : MonoBehaviour
         }
              
     }
+
+    private void SpawnHitEffect(RaycastHit hit)
+    {
+        if (!hitEffect) { Debug.Log("HitEffect Particle Not Linked to weapon"); return; }
+        ParticleSystem spawnedHitEffect = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal)) as ParticleSystem;
+        Destroy(spawnedHitEffect.gameObject, 1f);
+    }
+
 }
