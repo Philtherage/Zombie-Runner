@@ -25,3 +25,7 @@
 * Section 6: 184. Use Animation Events.
 
 * Section 6: 186. Rotate To Face Target.
+
+* Section 6: 187. Gamve Over User Interface.
+
+* Section 6: 188. Create A Death handler.

@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         SetupHealthBar();
     }
 
@@ -27,15 +28,11 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerTakeDamage(int damage)
     {
         health -= damage;
-        if(health <= 0)
-        {
-            Die();
-        }
     }
 
-    private void Die()
-    {
-        throw new NotImplementedException();
+    public int GetHealth() 
+    { 
+        return health;
     }
 
     private void SetupHealthBar()
