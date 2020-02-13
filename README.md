@@ -19,3 +19,5 @@
 * Section 6: 178. Implement A Muzzle Flash.
 
 * Section 6: 179. Creating Shooting Hit Effect.
+
+* Section 6: 181. Creating A Simple Animation.

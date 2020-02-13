@@ -6,10 +6,12 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,7 +26,8 @@ public class EnemyHealth : MonoBehaviour
 
         if(health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 2f);
+            animator.SetTrigger("isDead");
         }
     }
 
