@@ -15,3 +15,5 @@
 * Section 6: 176. Introduction To Raycasting.
 
 * Section 6: 177. Enemy Health & Damage.
+
+* Section 6: 178. Implement A Muzzle Flash.
