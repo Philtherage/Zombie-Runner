@@ -23,3 +23,5 @@
 * Section 6: 181. Creating A Simple Animation.
 
 * Section 6: 184. Use Animation Events.
+
+* Section 6: 186. Rotate To Face Target.
