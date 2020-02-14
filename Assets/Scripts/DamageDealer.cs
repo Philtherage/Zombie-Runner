@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    [SerializeField] int damage = 10;
 
-    public void DealDamageToPlayer()
+    public void DealDamageToPlayer(int damage)
     {
         FindObjectOfType<PlayerHealth>().PlayerTakeDamage(damage);
     }

@@ -39,3 +39,5 @@
 * Section 6: 203. Ammo Pickup - Part 2.
 
 * Section 6: 204. Lets Add A Zombie.
+
+* Section 6: 205. Quick Zombie Attack Challenge.
