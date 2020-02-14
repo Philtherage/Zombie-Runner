@@ -31,3 +31,5 @@
 * Section 6: 188. Create A Death handler.
 
 * Section 6: 189. Using BoadcaseMessage.
+
+* Section 6: 190. Early Gameplay Loop.
