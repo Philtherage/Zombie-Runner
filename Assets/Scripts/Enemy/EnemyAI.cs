@@ -14,8 +14,8 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 
-
     Animator animator;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -86,7 +86,6 @@ public class EnemyAI : MonoBehaviour
 
     private void FaceTarget()
     {
-        
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, turnSpeed);
@@ -97,6 +96,13 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    private void OnDeath() // called with string ref...
+    {
+        enabled = false;
+        naveMeshAgent.enabled = false;
+        
     }
 
 }

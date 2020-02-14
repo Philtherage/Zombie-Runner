@@ -35,3 +35,7 @@
 * Section 6: 190. Early Gameplay Loop.
 
 * Section 6: 192. Weapon Zoom - Field Of View.
+
+* Section 6: 203. Ammo Pickup - Part 2.
+
+* Section 6: 204. Lets Add A Zombie.

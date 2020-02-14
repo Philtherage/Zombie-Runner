@@ -6,6 +6,9 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
 
+
+    bool alreadyDead = false;
+
     Animator animator;
 
     // Start is called before the first frame update
@@ -24,11 +27,12 @@ public class EnemyHealth : MonoBehaviour
     {
         BroadcastMessage("OnDamageTaken");
         health -= damage;
-        if(health <= 0)
+        if(health <= 0 && !alreadyDead)
         {
-            Destroy(gameObject, 2f);
+            //Destroy(gameObject, 2f);
+            SendMessage("OnDeath");
             animator.SetTrigger("isDead");
+            alreadyDead = true;
         }
     }
-
 }
