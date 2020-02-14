@@ -30,6 +30,11 @@ public class EnemyAI : MonoBehaviour
         IfProvoked();
     }
 
+    public void OnDamageTaken() // called with a string ref...
+    {
+        isProvoked = true;
+    }
+
     private void LateUpdate()
     {
         if (isProvoked)
