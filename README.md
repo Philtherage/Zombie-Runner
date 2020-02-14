@@ -33,3 +33,5 @@
 * Section 6: 189. Using BoadcaseMessage.
 
 * Section 6: 190. Early Gameplay Loop.
+
+* Section 6: 192. Weapon Zoom - Field Of View.
