@@ -41,3 +41,5 @@
 * Section 6: 204. Lets Add A Zombie.
 
 * Section 6: 205. Quick Zombie Attack Challenge.
+
+* Section 6: 208. ProBuilder For Making Props.
