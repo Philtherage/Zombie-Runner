@@ -47,3 +47,5 @@
 * Section 6: 208. ProBuilder For Making Props.
 
 * Section 6: 214. Create A FlashLight.
+
+* Section 6: 216. Damage Received UI.

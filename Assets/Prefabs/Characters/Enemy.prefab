@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9431270179749ac4a946a77fa111b665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   chaseRange: 10
   turnSpeed: 5
 --- !u!95 &4523873618977470140
@@ -149,7 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32a1316741ff404ca005b6f0759a900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damageCanvas: {fileID: 3243223218642688740, guid: 4176d67509169324188f63b9e3da7c63,
+    type: 3}
+  canvasFadeTime: 1
 --- !u!195 &64425137
 NavMeshAgent:
   m_ObjectHideFlags: 0
