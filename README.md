@@ -42,4 +42,8 @@
 
 * Section 6: 205. Quick Zombie Attack Challenge.
 
+* Section 6: 207. Add Terrain & Trees.
+
 * Section 6: 208. ProBuilder For Making Props.
+
+* Section 6: 214. Create A FlashLight.

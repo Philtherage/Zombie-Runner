@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float timeBetweenShots = 0.5f;
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
+    [SerializeField] TMPro.TextMeshProUGUI currentAmmo;
 
 
 
@@ -25,13 +27,13 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentAmmo.text = ammoSlot.GetAmmo(ammoType).ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        currentAmmo.text = ammoSlot.GetAmmo(ammoType).ToString();
         if (Input.GetButtonDown("Fire1") && canShoot)
         {         
            StartCoroutine(Shoot());
@@ -58,10 +60,6 @@ public class Weapon : MonoBehaviour
                 target.TakeDamage(damage);
             }
             Debug.Log(hit.collider.gameObject.name);
-        }
-        else
-        {
-            yield break;
         }
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
